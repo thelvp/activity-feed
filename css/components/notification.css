@@ -1,0 +1,51 @@
+.notification {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background: white;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgb(235,235,235);
+}
+
+.notification-content p {
+  margin: 0;
+}
+
+.notification-content {
+  /* Grow as much as possible, not compromising the one right side  */
+  flex-grow: 1;
+}
+
+.date {
+  color: gray;
+  font-weight: bolder;
+  font-size: smaller;
+}
+
+.notifications {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.notification:last-child {
+ border-bottom: 1px solid transparent;
+}
+
+.notification-actions {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.notification-actions a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.notification-actions a:hover {
+  opacity: 1;
+}
